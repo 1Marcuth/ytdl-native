@@ -1,3 +1,5 @@
+import { VideoBasicInfo, VideoInfo } from "ytdl-native/lib/info"
+
 export default ytdl;
 /**
  * @param {string} link
@@ -6,8 +8,8 @@ export default ytdl;
  */
 declare function ytdl(link: string, options: Object): Promise<Array<Object>>;
 declare namespace ytdl {
-    const getBasicInfo: (id: string, options: Object) => Promise<Object>;
-    const getInfo: (id: string, options: Object) => Promise<Object>;
+    const getBasicInfo: (id: string, options: Object) => Promise<VideoBasicInfo>;
+    const getInfo: (id: string, options: Object) => Promise<VideoInfo>;
     const chooseFormat: (formats: Object[], options: Object) => Object;
     const filterFormats: (formats: Object[], filter: Function) => Object[];
     const validateID: (id: any) => boolean;
