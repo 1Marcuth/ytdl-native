@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "./typings",
+    "allowJs": true,
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
